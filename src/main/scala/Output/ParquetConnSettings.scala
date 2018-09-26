@@ -16,6 +16,6 @@ case class ParquetConnSettings(SQLContext: SQLContext) {
     val df = SQLContext.createDataFrame(rdd, parquetSchema)
     df.show
     df.printSchema()
-    df.write.mode(Append).parquet("hdfs://localhost:9000/user/hadoop/data")
+    //df.write.mode(Append).parquet("hdfs://localhost:9000/user/hadoop/data")
   }
 }
